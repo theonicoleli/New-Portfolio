@@ -955,8 +955,9 @@ a{
     }
 
     #final_information h1 {
-        margin-top: 60vh;
-        font-size: 5vw;
+        margin-top: 0px !important;
+        font-size: 4vh;
+        padding-top: 200px;
     }
 
     .sobre_mim {
@@ -978,37 +979,60 @@ a{
     #final_information .square {
         width: 90%;
         margin: auto;
+        flex-direction: column;
     }
 
-    .square .sobre:hover {
-        transform: scale(1);
-        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
-        background: #fff;
-        margin: 5px;
-        width: 500px;
+    .square {
+        pointer-events: none;
     }
 
-    .square .sobre:hover p.role {
-        color: #ccc;
-        font-size: 15px;
-        text-transform: uppercase;
-        margin: 12px 0;
-    }
-
-    .square .sobre:hover p {
-        line-height: 20px;
-        color: #15365d;
-    }
-
-    .square .sobre:hover .theo_img {
-        background-color: white;
-    }
-
-    .square .sobre:hover .theo_img i {
-        color: #15365d;
+    .square .sobre {
+        width: auto;
+        pointer-events: none;
     }
 
     .frase_works{
-        margin-top: 450px;
+        margin-top: 0px !important;
+        padding-top: 300px;
+        padding-bottom: 20px;
+        font-size: 4vh;
+    }
+
+    .works {
+        width: 100% !important;
+    }
+
+    .box {
+        display: none;
+    }
+
+    #habilidades {
+        display: none;
+    }
+
+    .enviar_proposta h1 {
+        padding-top: 200px;
+        margin-top: 0px !important;
+    }
+
+    .enviar_proposta h1 a {
+        font-size: 4vh;
+    }
+
+    .enviar_proposta form {
+        width: 100%;
+    }
+
+    .enviar_proposta label {
+        margin-top: 35px !important;
+        font-size: 2vh !important;
+        font-weight: bold !important;
+        font-family: var(--fonte-padrao) !important;
+    }
+
+    .enviar_proposta input, textarea {
+        font-size: 2vh;
+        width: 100% !important;
+        padding: 10px;
     }
 }
